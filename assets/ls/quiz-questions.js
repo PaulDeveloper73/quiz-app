@@ -46,3 +46,5 @@ const quizQuestions = [
     user_answer: null
   }
 ]
+
+export default quizQuestions
