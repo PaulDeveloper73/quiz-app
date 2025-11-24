@@ -1,2 +1,2 @@
-## Quiz App
-# Test yourself with the following quiz questions
+# Quiz App
+### Test yourself with the following quiz questions
