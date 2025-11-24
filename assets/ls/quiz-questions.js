@@ -1,5 +1,5 @@
 // object array to hold  5 quiz questions and answers
-const quizQuestions = [
+let quizQuestions = [
   {
     id: 1,
     question: 'What is the capital of France?',
