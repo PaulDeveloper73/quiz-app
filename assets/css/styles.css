@@ -23,6 +23,14 @@ body {
   min-width: 300px;
   max-width: 300px;
 }
+@media screen and (max-width: 768px) {
+  .quiz-wrapper {
+    padding: 20px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+}
+
 h1 {
   color: #530d55;
 }
@@ -30,6 +38,9 @@ h1 {
   list-style: upper-alpha;
   line-height: 25px;
   cursor: pointer;
+}
+.quiz-options li::marker {
+  color: #b02ab4;
 }
 .quiz-options li {
   margin: 10px 0;
