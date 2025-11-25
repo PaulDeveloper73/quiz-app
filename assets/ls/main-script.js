@@ -7,7 +7,10 @@ import { displayQuiz } from './display-quiz.js'
 
 document.addEventListener('DOMContentLoaded', () => {
   // Additional initialization code can go here
-  initApp()
+  setTimeout(() => {
+    // nextBtn.textContent = 'Next'
+    initApp()
+  }, 1000)
 })
 const initApp = () => {
   const quizContainer = document.querySelector('.quiz-container')
@@ -19,6 +22,8 @@ const initApp = () => {
   const handleNextBrn = () => {
     fetchQnItem = quizQuestions[qnId] ?? ''
     displayQuiz(qnId, fetchQnItem, quizContainer)
+    nextBtn.textContent = 'Next →'
+
     if (qnId >= quizQuestions.length) {
       const getUserAnswers = loadQuizData()
       const userAnswers = getUserAnswers.filter(
