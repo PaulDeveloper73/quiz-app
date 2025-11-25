@@ -8,7 +8,6 @@ import { displayQuiz } from './display-quiz.js'
 document.addEventListener('DOMContentLoaded', () => {
   // Additional initialization code can go here
   setTimeout(() => {
-    // nextBtn.textContent = 'Next'
     initApp()
   }, 1000)
 })
