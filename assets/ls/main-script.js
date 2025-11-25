@@ -20,6 +20,12 @@ const initApp = () => {
     fetchQnItem = quizQuestions[qnId] ?? ''
     displayQuiz(qnId, fetchQnItem, quizContainer)
     qnId++
+    if (qnId >= quizQuestions.length) {
+      nextBtn.style.display = 'none'
+      quizHeader.textContent = 'Quiz Completed!'
+      quizContainer.innerHTML =
+        '<h4>Thank you for participating in the quiz.</h4>'
+    }
   }
   // add event listner on click on the list to give bgcolor on correct and wrong answer
   quizContainer.addEventListener('click', e => {
